@@ -1,0 +1,10 @@
+namespace: team1-tenant1
+replicaCount: 1
+image:
+  repository: nginx
+  tag: latest
+service:
+  type: ClusterIP
+  port: 80
+route:
+  host: nginx-team1.apps.natwest.priartw.com
